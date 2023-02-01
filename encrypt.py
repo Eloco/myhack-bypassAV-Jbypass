@@ -170,6 +170,7 @@ if __name__ == "__main__":
         loc={}
         exec(shellcode.read(),globals(),loc)
         buf=loc["buf"]
+        print(buf)
 
     # base64 + hex + rc4
     key = GetKey().random_key(10)
